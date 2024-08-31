@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;600&family=Titillium+Web:wght@300;400;600&family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+body{
+    background-image: url(./images/contactwallpaper.webp);
+    background-size: 100%;
+}
+.contact-heading{
+    text-align: center;
+}
+.contact-heading h1{
+    font-size: 50px;
+}
+.top-container{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.back-arrow a {
+    padding: 10px; 
+    font-size: 25px;
+    text-decoration: none;
+    color: black; 
+    background-color: lightseagreen; 
+    border-radius: 30px;
+}
+.back-arrow a:hover {
+    padding: 10px; 
+    font-size: 25px;
+    text-decoration: none;
+    color: white; 
+    background-color: black; 
+    border-radius: 30px;
+}
+.contact-heading h1{
+    font-size: 40px;
+    
+}
+.home-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: seagreen;
+    height: 300px;
+    width: 100%;
+    
+}
+.icon{
+    color: white;
+    font-size: 50px;
+}
+.text-con{
+    color: white;
+}
+.link a {
+    color: yellow;
+}
+.life,.location,.career,.appointment
+{
+    width: 20%;
+    padding-left: 60px;
+}
+.formm-container{
+    display: flex;
+}
+.form-img img{
+    height: 575px;
+}
+.form-txt h1{
+    padding: 40px;
+    font-size: 50px;
+}
+.form-txt p{
+    font-size: 30px;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 40px;
+    color: ;
+}
+.form-txt h2{
+    font-size: 30px;
+    align-items: center;
+    padding-top: 70px;
+    padding-left: 40px;
+}
+.form-container{
+    width: 42%;
+    margin-top: 70px;
+    margin-left: 158px;
+    height: 640px;
+    padding: 44px;
+    font-size: 18px;
+    color: white;
+    background-color:lightblue;
+    backdrop-filter: blur(40px);
+    border-radius: 18px;
+    border-style: dashed;
+    position: relative;
+    left: 280px;
+  }
+  form{
+    height: 595px;
+  }
+  input[type=text], input[type=email], textarea {  
+    width: 100%;  
+    padding: 15px;  
+    margin: 2px 0 5px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1; 
+    border-radius: 18px; 
+  }  
+  .registerbtn {  
+    background-color:orange;  
+    color: white;  
+    padding: 10px 15px;  
+    margin: 6px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    opacity: 1;
+    font-size: 20px;  
+    border-radius: 80px;
+  }  
+  .registerbtn:hover {  
+    opacity: 0.5;  
+  }
+  .space{
+    height: 40px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    background-color: lightseagreen;
+    background-position: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 490px;
+  }
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.social-media a {
+    margin: 20px;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.social-media a:hover {
+    background-color: black;
+    color: yellow;
+}
+  
+  .footer2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+  .footer0 {
+    font-weight: 300;
+    transition-duration: 1s;
+  }
+  .footer0:hover {
+    color: rgb(243, 168, 7);
+  }
+  .footer2 .heading {
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .footer3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    padding: 6px;
+    border-radius: 18px;
+  }
+  .footer2 .heading:hover {
+    color: rgb(243, 168, 7);
+  }
+  .footer2 .div:hover {
+    transform: scale(1.05);
+  }
+  .footer3 h4 {
+    margin: 0 10px;
+  }
+  .footer2 div {
+    margin: 10px;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .heading1 .ham:active {
+    color: red;
+  }
+  .items {
+    overflow: hidden;
+  }
+  .ham,
+  .close {
+    cursor: pointer;
+  }
+  .footer0 h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+  }
+  .heading{
+    background-color: black;
+    padding: 4px;
+    border-radius: 18px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .div{
+    text-align: center;
+    cursor: pointer;
+  }
+  .div:hover{
+    color: rgb(243, 168, 7);
+  }

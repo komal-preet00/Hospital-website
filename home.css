@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;600&family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-container{
+    display: flex;
+    width: 111%;
+}
+.navbar-image{
+    width: 17%;
+}
+.navbar-text{
+    display: flex;
+    width: 71%;
+    font-size: 20px;
+    padding-top: 0px;
+}
+.navbar-ul ul{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding: 32px; 
+}
+.navbar-ul{
+    width: 96%;
+    background-color:lightgreen;
+    border-radius: 60px;
+}
+.navbar-icons a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding-top: 32px;
+}
+.navbar-icons{
+    display: flex;
+    width: 13%;
+    justify-content: space-evenly;
+}
+
+.navbar-text ul li a{
+    text-decoration: none;
+    color: black;  
+    font-weight: 500; 
+} 
+.navbar-text ul li a:hover .underline{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 3px;
+    transition: 0.10s ease-in-out;
+}   
+.navbar-ul li{
+    list-style: none;
+}
+.logo{
+    width: 250px;
+}
+.slider-container{
+    height: 600px;
+}
+.slider-images{
+    background-image:url(./images/slider1.jpg);
+    width: 95%;
+    height: 550px;
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    background-size:100% 100%;
+    transform: translate(-50%,-50%);
+    border-color: black;
+    border-style:solid ;
+    animation:slider 20s infinite linear;
+}
+@keyframes slider{
+    0% {
+        background-image: url(./images/slider1.jpg);
+    }
+    25%{
+        background-image: url(./images/slider2.jpg);
+    }
+    50% {
+        background-image: url(./images/slider3.jpg);
+    }
+    75% {
+        background-image: url(./images/slider4.jpg);
+    }
+    100% {
+        background-image: url(./images/slider5.jpg);
+    }
+}
+.explore-container{
+    margin-top: 30px;   
+}
+.explore-text{
+    text-align: center;
+    font-size: 25px;   
+}
+.explore-text h1{
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 600;
+}
+.information-container{
+    display: flex;
+    background-color: lightblue;
+    margin: 30px;
+}
+.large-container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 20px;
+    left: 10px;
+    position: relative;
+
+}
+.doctors{
+    height: 575px;
+    width: 100%;
+    border-radius: 15px;
+}
+.tiles-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    left: 10px;
+    justify-content: space-evenly;
+}
+.first-tile ,.second-tile,.third-tile{
+    border-radius: 15px;
+    height: 150px;
+}
+.first-row-tile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.first-half{
+    border-radius: 15px;
+}
+.first-half h2,.second-half h2,.third-half h2{
+    font-weight: 200;
+    text-align: center;
+}
+.first-half-img,.second-half-img,.third-half-img{
+    background: white;
+    border-radius: 15px;
+}
+.clinical-container{
+    text-align: center;
+    height: 450px;
+}
+.clinical-heading h1{
+    text-align: center;
+    font-size: 50px;
+}
+.clinical-tiles{
+    display: flex;
+    justify-content: space-evenly;
+    border-color: black;
+    padding: 50px;
+    margin-left: 30px;
+}
+.first-clinical,.second-clinical ,.third-clinical {
+    font-size: 20px;
+    border-radius: 60px;
+    background-color: blue;
+    text-align: center;
+    width: 440px;
+    height: 200px;
+}
+.first-clinical:hover,.second-clinical:hover ,.third-clinical:hover{
+  transition-duration: 0.8s;
+  transform: scale(1.1);
+} 
+.first-clinical h1,.second-clinical h1,.third-clinical h1{
+    font-size: 40px;
+    margin-top: 30px;
+}
+.news-container{
+    display: flex;
+    flex-direction:column;
+    background-color: lightblue;
+    height: 550px;
+}
+.news-txt{
+    text-align: center;
+    font-size: 25px;
+}
+.news-img{
+    position: relative;
+    top: 20px;
+    left: 380px;
+
+}
+.img-1:hover img{
+  transition-duration: 0.8s;
+  transform: scale(1.5);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/foot.jpg);
+    background-position: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 435px;
+  }
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.social-media a {
+    margin: 20px;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.social-media a:hover {
+    background-color: black;
+    color: yellow;
+}
+  
+  .footer2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+  .footer0 {
+    font-weight: 300;
+    transition-duration: 1s;
+  }
+  .footer0:hover {
+    color: rgb(243, 168, 7);
+  }
+  .footer2 .heading {
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .footer3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    padding: 6px;
+    border-radius: 18px;
+  }
+  .footer2 .heading:hover {
+    color: rgb(243, 168, 7);
+  }
+  .footer2 .div:hover {
+    transform: scale(1.05);
+  }
+  .footer3 h4 {
+    margin: 0 10px;
+  }
+  .footer2 div {
+    margin: 10px;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .heading1 .ham:active {
+    color: red;
+  }
+  .items {
+    overflow: hidden;
+  }
+  .ham,
+  .close {
+    cursor: pointer;
+  }
+  .footer0 h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+  }
+  .heading{
+    background-color: black;
+    padding: 4px;
+    border-radius: 18px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .div{
+    text-align: center;
+    cursor: pointer;
+  }
+  .div:hover{
+    color: rgb(243, 168, 7);
+  }

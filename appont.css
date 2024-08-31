@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;600&family=Titillium+Web:wght@300;400;600&family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-color: lightsteelblue;
+    background-size: 100%;
+}
+
+.heading00 {
+    text-align: center;
+}
+
+.heading00 h1 {
+    font-size: 60px;
+    font-weight: 1600;
+}
+
+.top-container {
+    margin-top: 15px;
+}
+
+.back-arrow a {
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color:darkblue;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+.back-arrow a:hover {
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+}
+.main-app{
+    height: 450px;
+    background-color: lightsteelblue;
+}
+.app-parts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+}
+.parts{
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    
+}
+.part1,.part2,.part3{
+    width: 450px;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-left: 0px;
+}
+.part1:hover,.part2:hover,.part3:hover{
+    transition-duration: 0.8s;
+    transform: scale(1.1);
+}
+.txt{
+    margin-left: 10px;
+}
+.txt p{
+    width: 100%;
+}
+.icon{
+  font-size: 55px;
+  position: relative;
+  left: 40px;
+}
+.form-container{
+    width: 83%;
+    margin-left: 8px;
+    margin-top: 25px;
+    
+}
+form{
+    width: 63%;
+    height: 850px;
+    display: block;
+    font-size: 22px;
+    margin-left: 340px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 18px;
+    border-style:groove;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.form-head{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+label{
+    font-weight: 500;
+    margin-left: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+legend{
+    font-size: 32px;
+}
+fieldset{
+    border-radius: 8px;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+}
+input{
+    border-radius: 6px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.registerbtn {
+    background-color: lightslategray;
+    color: white;
+    padding: 10px 15px;
+    margin: 40px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+    font-size: 20px;
+    border-radius: 80px;
+}
+
+.registerbtn:hover {
+    opacity: 0.5;
+}
+.space{
+    height: 40px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: lightslategray;
+    background-position: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 490px;
+  }
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.social-media a {
+    margin: 20px;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.social-media a:hover {
+    background-color: black;
+    color: yellow;
+}
+  
+  .footer2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+  .footer0 {
+    font-weight: 300;
+    transition-duration: 1s;
+  }
+  .footer0:hover {
+    color: rgb(243, 168, 7);
+  }
+  .footer2 .heading {
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .footer3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    padding: 6px;
+    border-radius: 18px;
+  }
+  .footer2 .heading:hover {
+    color: rgb(243, 168, 7);
+  }
+  .footer2 .div:hover {
+    transform: scale(1.05);
+  }
+  .footer3 h4 {
+    margin: 0 10px;
+  }
+  .footer2 div {
+    margin: 10px;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .heading1 .ham:active {
+    color: red;
+  }
+  .items {
+    overflow: hidden;
+  }
+  .ham,
+  .close {
+    cursor: pointer;
+  }
+  .footer0 h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+  }
+  .heading{
+    background-color: black;
+    padding: 4px;
+    border-radius: 18px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .div{
+    text-align: center;
+    cursor: pointer;
+  }
+  .div:hover{
+    color: rgb(243, 168, 7);
+  }

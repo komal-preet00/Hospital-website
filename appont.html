@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appointment</title>
+    <link rel="stylesheet" href="./appont.css">
+    <link rel="icon" href="./images/fav-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="top-container">
+        <div class="back-arrow">
+            <a href="./home.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="heading00">
+            <h1>Appointment</h1>
+        </div>
+    </div>
+    <div class="main-app">
+        <div class="app-parts">
+            <div class="parts">
+                <div class="part1">
+                    <div class="icon"><i class="fa fa-user-md" aria-hidden="true"></i></div>
+                    <div class="txt">
+                        <h1>Availability Management</h1>
+                        <p>Easily create available and busy timings to control the slots.</p>
+                    </div>
+                </div>
+                <div class="part2">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="txt">
+                        <h1>Shifting Appointments</h1>
+                        <p>Shift many appointments at once and notify by SMS and Email.</p>
+                    </div>
+                </div>
+                <div class="part3">
+                    <div class="icon"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    <div class="txt">
+                        <h1>Cancellations</h1>
+                        <p>You can cancel all appointments in time window, and inform patients by SMS/Email.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parts">
+                <div class="part1">
+                    <div class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                    <div class="txt">
+                        <h1>Waiting Room</h1>
+                        <p>Automatically queues patients. You can display the queue on a TV. Also, announce the next patient.</p>
+                    </div>
+                </div>
+                <div class="part2">
+                    <div class="icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+                    <div class="txt">
+                        <h1>Reserve Slots</h1>
+                        <p>You can specify slots as walk-in/reserve slots. This will help manage walk-ins and emergencies.</p>
+                </div>
+                </div>
+                <div class="part3">
+                    <div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                    <div class="txt">
+                        <h1>Multi Doctor Support</h1>
+                        <p>Multiple doctors and departments can be added.</p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="form-container">
+        <form action="" id="myform">
+            <div class="form-head">Advent-Health hospital</div>
+            <br>
+            <br>
+            <fieldset>
+                <Legend>Personal Details</Legend>
+                <label for="">Name:</label>
+                <input type="text" name="fname" placeholder="First Name">
+                <input type="text" name="mname" placeholder="Middle Name">
+                <input type="text" name="lname" placeholder="Last Name">
+                <br>
+                <label for="">Email :</label>
+                <input type="email" name="email" placeholder="Enter E-mail id">
+                <br>
+                <label for="">Phone No.</label>
+                <input type="number" name="number" placeholder="Enter Phone No.">
+                <br>
+                <label for="">Date Of Birth:</label>
+                <input type="date" name="dob">
+                <br>
+                <label for="">Address :</label>
+                <input type="text" name="Address" placeholder="Address">
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Appointment Detials</legend>
+                <label for="">Appointment For:</label>
+                <input type="radio"  name="gender" value="Place"/>Department
+                <input type="radio"  name="gender" value="Fun-zone"/>Doctor
+                <br>
+                <label for="">Department Name:</label>
+                <input type="text" name="Department"/>
+                
+                <br>
+                <label for="">Doctors:</label>
+                <select name="Doctor">
+                    <option value="0">--choose Doctor--</option>
+                    <option value="1">Dr.Jiya</option>
+                    <option value="2">Dr.Gulati</option>
+                    <option value="3">Dr.Jack</option>
+                    <option value="4">Dr.Sanem</option>
+                    <option value="1">Dr.Harry</option>
+                    <option value="2">Dr.Johnson</option>
+                    <option value="3">Dr.Anand</option>
+                    <option value="4">Dr.Henna</option>
+                    <option value="1">Dr.Rock</option>
+                    
+                </select>
+                <br>
+                <label for="">Appointment Date:</label>
+                <label for="">Date-</label>
+                <input type="date" placeholder="starting from">
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Documents</legend>
+                <label for="">Adhar Card:</label>
+                <input type="file" name="adhar-card">
+                <br>
+                <label for="">Payment slip:</label>
+                <input type="file" name="slip">
+                <br>
+                <label for="">Mode of Payment:</label>
+                <br>
+                <input type="radio"  name="pay" value="UPI"/>UPI
+                <input type="radio"  name="pay" value="card"/>Debit/Credit Card
+                <input type="radio"  name="pay" value="Cash"/>Cash Payment 
+                <input type="radio"  name="pay" value="Net"/>Net-Banking
+            </fieldset>
+            <button type="submit" class="registerbtn" onclick="pagePrint(myform)">SUBMIT</button>
+        </form>
+    </div>
+    <div class="space"></div>
+    <footer>
+        <br>
+        <div class="footer0">
+            <h1>WE CARE FOR YOU</h1>
+        </div>
+        <div class="footer1 ">
+            Connect with us at<div class="social-media">
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="product">
+                <div class="heading">QUICK LINKS</div> 
+                <div class="div">Feedback</div>
+                <div class="div">Blogs</div>
+                <div class="div">Make an Enquiry</div>
+                <div class="div">International Patients</div>
+
+            </div>
+            <div class="services">
+                <div class="heading">NH CARES</div>
+                <div class="div">Hernia</div>
+                <div class="div">lung Cancer</div>
+                <div class="div">Heart Attack</div>
+                <div class="div">Bone Marrow Transplant</div>
+            </div>
+            <div class="Company">
+                <div class="heading">CENTRES OF EXCELLENCE</div>
+                <div class="div">Cardiology</div>
+                <div class="div">Neurology</div>
+                <div class="div">Nephrology</div>
+                <div class="div">Orthopaedics</div>
+            </div>
+            <div class="Get Help">
+                <div class="heading">PROFESSIONALS</div>
+                <div class="div">Academics</div>
+                <div class="div">Clinical Research</div>
+                <div class="div">Health Colleges</div>
+            </div>
+        </div>
+        <div class="footer3">Copyright © <h4>komalpreet</h4> 2023-2028</div>
+    </footer>
+    <script>
+        function pagePrint(myform){
+            var printdata=document.getElementById("myform");
+            newwin=window.open("");
+            newwin.document.write(printdata.outerHTML);
+            newwin.print();
+            newwin.close();
+        }
+    </script>
+    
+</body>
+</html>
